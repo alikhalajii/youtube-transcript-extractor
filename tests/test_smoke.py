@@ -11,14 +11,11 @@ def test_package_metadata_exposed() -> None:
 def test_extract_video_id_from_common_inputs() -> None:
     assert YouTubeTranscriptExtractor.extract_video_id("dQw4w9WgXcQ") == "dQw4w9WgXcQ"
     assert (
-        YouTubeTranscriptExtractor.extract_video_id(
-            "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        )
+        YouTubeTranscriptExtractor.extract_video_id("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         == "dQw4w9WgXcQ"
     )
     assert (
-        YouTubeTranscriptExtractor.extract_video_id("https://youtu.be/dQw4w9WgXcQ")
-        == "dQw4w9WgXcQ"
+        YouTubeTranscriptExtractor.extract_video_id("https://youtu.be/dQw4w9WgXcQ") == "dQw4w9WgXcQ"
     )
 
 

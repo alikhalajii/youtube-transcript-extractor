@@ -44,8 +44,12 @@ Issues = "https://github.com/alikhalajii/youtube-transcript-extractor/issues"
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
     "black>=24.0.0",
     "ruff>=0.3.0",
+    "mypy>=1.9.0",
+    "types-PyYAML>=6.0.0",
+    "pre-commit>=4.0.0",
     "build>=1.2.2",
 ]
 

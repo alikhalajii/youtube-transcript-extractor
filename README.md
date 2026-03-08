@@ -131,6 +131,15 @@ ruff check youtube_transcript/
 pytest
 ```
 
+Install a commit-time gate that mirrors CI checks:
+
+```bash
+uv pip install -e ".[dev]"
+pre-commit install
+```
+
+This runs `black --check`, `ruff check`, `mypy`, and `pytest` before each commit.
+
 ## Troubleshooting
 
 - If captions are disabled by the video owner, transcript extraction will fail.
