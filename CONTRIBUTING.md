@@ -1,10 +1,10 @@
-# Contributing to YouTube Transcript Extractor
+# Contributing to yt-transcript-extractor
 
 ## Setting Up Development Environment
 
 ```bash
-git clone https://github.com/alikhalajii/youtube-transcript-extractor.git
-cd youtube-transcript-extractor
+git clone https://github.com/alikhalajii/yt-transcript-extractor.git
+cd yt-transcript-extractor
 
 uv venv
 source .venv/bin/activate
@@ -49,9 +49,9 @@ This check validates:
 ### Publishing to PyPI
 
 1. **One-time setup**: Configure PyPI Trusted Publisher for this repository:
-   - Go to PyPI project settings for `youtube-transcript-extractor`
+   - Go to PyPI project settings for `yt-transcript-extractor`
    - Add GitHub as a Trusted Publisher
-   - Specify repository: `alikhalajii/youtube-transcript-extractor`
+   - Specify repository: `alikhalajii/yt-transcript-extractor`
    - Workflow file: `.github/workflows/publish.yml`
 
 2. **Create a release on GitHub**:

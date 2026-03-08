@@ -1,4 +1,4 @@
-"""Command-line interface for YouTube Transcript Extractor."""
+"""Command-line interface for yt-transcript-extractor."""
 
 import sys
 
@@ -52,7 +52,7 @@ def main(url: str, output_dir: str, format: str, timestamps: bool, language: tup
 
         yt-transcript https://youtu.be/dQw4w9WgXcQ -o my_transcripts -l en -l es
     """
-    click.echo("YouTube Transcript Extractor\n")
+    click.echo("yt-transcript-extractor\n")
 
     # Extract video ID
     extractor = YouTubeTranscriptExtractor()

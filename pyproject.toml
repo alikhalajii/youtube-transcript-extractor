@@ -1,5 +1,5 @@
 [project]
-name = "youtube-transcript-extractor"
+name = "yt-transcript-extractor"
 version = "0.1.0"
 description = "A CLI tool to extract and save YouTube video transcriptions with metadata"
 authors = [
@@ -38,10 +38,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/alikhalajii/youtube-transcript-extractor"
-Repository = "https://github.com/alikhalajii/youtube-transcript-extractor"
-Issues = "https://github.com/alikhalajii/youtube-transcript-extractor/issues"
-Changelog = "https://github.com/alikhalajii/youtube-transcript-extractor/releases"
+Homepage = "https://github.com/alikhalajii/yt-transcript-extractor"
+Repository = "https://github.com/alikhalajii/yt-transcript-extractor"
+Issues = "https://github.com/alikhalajii/yt-transcript-extractor/issues"
+Changelog = "https://github.com/alikhalajii/yt-transcript-extractor/releases"
 
 [project.optional-dependencies]
 dev = [

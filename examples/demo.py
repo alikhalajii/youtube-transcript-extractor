@@ -1,4 +1,4 @@
-"""Simple test/demo script for the YouTube Transcript Extractor."""
+"""Simple test/demo script for the yt-transcript-extractor."""
 
 from youtube_transcript.extractor import YouTubeTranscriptExtractor
 from youtube_transcript.writer import TranscriptWriter

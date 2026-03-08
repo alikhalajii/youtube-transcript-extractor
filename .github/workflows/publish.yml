@@ -45,7 +45,7 @@ jobs:
       id-token: write
     environment:
       name: pypi
-      url: https://pypi.org/p/youtube-transcript-extractor
+      url: https://pypi.org/p/yt-transcript-extractor
     steps:
       - name: Download distribution artifacts
         uses: actions/download-artifact@v4

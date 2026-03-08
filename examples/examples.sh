@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Example usage script for YouTube Transcript Extractor
+# Example usage script for yt-transcript-extractor
 
 # Example 1: Basic usage - extract to markdown
 echo "Example 1: Basic markdown extraction"

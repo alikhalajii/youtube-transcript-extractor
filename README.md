@@ -1,4 +1,4 @@
-# YouTube Transcript Extractor
+# yt-transcript-extractor
 
 Extract YouTube video transcripts from the command line and save them in LLM-friendly formats (Markdown with frontmatter, JSON, TXT, and SRT).
 
@@ -29,8 +29,8 @@ Lightweight Python CLI for transcript extraction, subtitle generation, and downs
 
 ```bash
 # clone and enter repository
-git clone https://github.com/alikhalajii/youtube-transcript-extractor.git
-cd youtube-transcript-extractor
+git clone https://github.com/alikhalajii/yt-transcript-extractor.git
+cd yt-transcript-extractor
 
 # create environment and install
 uv venv
@@ -108,7 +108,7 @@ Subtitle-ready output using the standard `HH:MM:SS,mmm --> HH:MM:SS,mmm` format.
 ## Project Structure
 
 ```text
-youtube-transcript-extractor/
+yt-transcript-extractor/
 ├── examples/
 │   ├── demo.py
 │   └── examples.sh
