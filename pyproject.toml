@@ -1,0 +1,84 @@
+[project]
+name = "youtube-transcript-extractor"
+version = "0.1.0"
+description = "A CLI tool to extract and save YouTube video transcriptions with metadata"
+authors = [
+    { name = "A L I K H A L A J I" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "youtube",
+    "transcript",
+    "subtitle",
+    "srt",
+    "cli",
+    "python",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Text Processing",
+]
+dependencies = [
+    "youtube-transcript-api>=0.6.2",
+    "click>=8.1.7",
+    "pyyaml>=6.0.1",
+    "python-dotenv>=1.0.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/alikhalajii/youtube-transcript-extractor"
+Repository = "https://github.com/alikhalajii/youtube-transcript-extractor"
+Issues = "https://github.com/alikhalajii/youtube-transcript-extractor/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.3.0",
+    "build>=1.2.2",
+]
+
+[project.scripts]
+yt-transcript = "youtube_transcript.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["youtube_transcript"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = []
+
+[tool.mypy]
+python_version = "3.9"
+pretty = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "youtube_transcript_api",
+    "youtube_transcript_api.*",
+]
+ignore_missing_imports = true
